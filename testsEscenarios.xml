@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ServiceNowAutomationTest" verbose="2" parallel="tests" thread-count="5">
+
+    <!-- Input Data frome -->
+    <parameter name="inputData" value="Input_IWMS.xlsx" />
+
+    <!-- Test -->
+    <test name="Verify Something - Test">
+        <parameter name="anyvar" value="anyvalue" />
+        <classes>
+            <class name="com.serviceNow.test.ProjectTest">
+                <methods>
+                    <include name="verifySomethingMethod" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
